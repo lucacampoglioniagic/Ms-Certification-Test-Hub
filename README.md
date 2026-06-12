@@ -2,6 +2,16 @@
 
 Simulatore d'esame per le certificazioni Microsoft. Interfaccia in italiano, feedback immediato dopo ogni domanda, spiegazioni dettagliate, link di approfondimento a Microsoft Learn e report finale con gli argomenti da rivedere.
 
+**🌐 Sito live:** https://lucacampoglioniagic.github.io/Ms-Certification-Test-Hub/
+
+## 📋 Certificazioni disponibili
+
+| Codice | Certificazione | Domande |
+|---|---|---|
+| AZ-900 | Microsoft Azure Fundamentals | 12 |
+| AI-900 | Microsoft Azure AI Fundamentals | 6 |
+| GH-300 | GitHub Copilot | 52 |
+
 ## ✨ Funzionalità
 
 - **Catalogo certificazioni** — la home elenca le certificazioni registrate in `public/data/index.json`
@@ -29,7 +39,7 @@ npm run preview
 
 ## 🌐 GitHub Pages
 
-Il workflow `.github/workflows/deploy.yml` pubblica automaticamente il sito su GitHub Pages a ogni push su `main`. Per attivarlo: **Settings → Pages → Source → GitHub Actions**.
+Il workflow `.github/workflows/deploy.yml` pubblica automaticamente il sito su GitHub Pages a ogni push su `main`. Pages è già configurato con source **GitHub Actions**; il sito è raggiungibile su https://lucacampoglioniagic.github.io/Ms-Certification-Test-Hub/.
 
 ## 📦 Architettura
 
