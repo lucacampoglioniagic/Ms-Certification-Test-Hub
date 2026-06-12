@@ -1,0 +1,215 @@
+{
+  "certificationId": "az-900",
+  "questions": [
+    {
+      "id": "az900-001",
+      "type": "single",
+      "difficulty": "easy",
+      "topic": "Concetti cloud",
+      "question": "Quale modello di cloud computing fornisce il massimo controllo sull'infrastruttura sottostante?",
+      "options": [
+        "Infrastructure as a Service (IaaS)",
+        "Platform as a Service (PaaS)",
+        "Software as a Service (SaaS)",
+        "Function as a Service (FaaS)"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "IaaS fornisce macchine virtuali, reti e storage gestiti dall'utente: è il modello con il maggior controllo (e la maggior responsabilità) sull'infrastruttura. PaaS e SaaS astraggono progressivamente più livelli.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/cloud-adoption-framework/get-started/cloud-concepts"
+    },
+    {
+      "id": "az900-002",
+      "type": "truefalse",
+      "difficulty": "easy",
+      "topic": "Concetti cloud",
+      "question": "Il cloud pubblico garantisce sempre costi inferiori rispetto a un data center on-premises.",
+      "correct": [
+        1
+      ],
+      "explanation": "Falso: il cloud sposta i costi da CapEx a OpEx e offre elasticità, ma non è automaticamente più economico. Carichi costanti e prevedibili possono costare meno on-premises o con istanze riservate.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/describe-cloud-compute/"
+    },
+    {
+      "id": "az900-003",
+      "type": "multiple",
+      "difficulty": "medium",
+      "topic": "Architettura e servizi Azure",
+      "question": "Quali dei seguenti sono servizi di calcolo (compute) di Azure? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Azure Virtual Machines",
+        "Azure Blob Storage",
+        "Azure App Service",
+        "Azure Virtual Network",
+        "Azure Container Instances"
+      ],
+      "correct": [
+        0,
+        2,
+        4
+      ],
+      "explanation": "Virtual Machines, App Service e Container Instances sono servizi compute. Blob Storage è un servizio di archiviazione e Virtual Network è un servizio di rete.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/describe-azure-compute-networking-services/"
+    },
+    {
+      "id": "az900-004",
+      "type": "single",
+      "difficulty": "medium",
+      "topic": "Architettura e servizi Azure",
+      "question": "Un'azienda vuole distribuire un'applicazione in più regioni per garantire alta disponibilità. Quale concetto di Azure descrive un insieme di data center connessi a bassa latenza all'interno di una regione?",
+      "options": [
+        "Region pair",
+        "Availability Zone",
+        "Resource Group",
+        "Management Group"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Le Availability Zone sono località fisicamente separate all'interno di una regione, ognuna con alimentazione, raffreddamento e rete indipendenti, connesse tra loro a bassissima latenza.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/reliability/availability-zones-overview"
+    },
+    {
+      "id": "az900-005",
+      "type": "ordering",
+      "difficulty": "hard",
+      "topic": "Gestione e governance",
+      "question": "Ordina la gerarchia di gestione delle risorse Azure dal livello più alto al più basso.",
+      "options": [
+        "Management Group",
+        "Subscription",
+        "Resource Group",
+        "Resource"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "La gerarchia corretta è: Management Group → Subscription → Resource Group → Resource. Le impostazioni applicate a un livello superiore vengono ereditate dai livelli inferiori.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/governance/management-groups/overview"
+    },
+    {
+      "id": "az900-006",
+      "type": "single",
+      "difficulty": "easy",
+      "topic": "Sicurezza",
+      "question": "Quale servizio Azure fornisce gestione centralizzata delle identità e degli accessi?",
+      "options": [
+        "Azure Key Vault",
+        "Microsoft Entra ID",
+        "Azure Firewall",
+        "Microsoft Defender for Cloud"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Microsoft Entra ID (ex Azure Active Directory) è il servizio di gestione delle identità e degli accessi basato sul cloud di Microsoft.",
+      "learnMoreUrl": "https://learn.microsoft.com/entra/fundamentals/whatis"
+    },
+    {
+      "id": "az900-007",
+      "type": "multiple",
+      "difficulty": "hard",
+      "topic": "Sicurezza",
+      "question": "Quali principi fanno parte del modello Zero Trust? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Verifica esplicita",
+        "Fiducia implicita nella rete interna",
+        "Accesso con privilegi minimi",
+        "Presunzione di violazione (assume breach)",
+        "Perimetro di rete come unica difesa"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Il modello Zero Trust si basa su tre principi: verifica esplicita, accesso con privilegi minimi e presunzione di violazione. La fiducia implicita nella rete interna è esattamente ciò che Zero Trust rifiuta.",
+      "learnMoreUrl": "https://learn.microsoft.com/security/zero-trust/zero-trust-overview"
+    },
+    {
+      "id": "az900-008",
+      "type": "truefalse",
+      "difficulty": "medium",
+      "topic": "Gestione e governance",
+      "question": "Azure Policy può impedire la creazione di risorse che non rispettano le regole aziendali definite.",
+      "correct": [
+        0
+      ],
+      "explanation": "Vero: con effetto 'Deny', Azure Policy blocca la creazione o modifica di risorse non conformi. Può anche solo segnalarle (Audit) o correggerle automaticamente (Modify/DeployIfNotExists).",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/governance/policy/overview"
+    },
+    {
+      "id": "az900-009",
+      "type": "single",
+      "difficulty": "medium",
+      "topic": "Prezzi e supporto",
+      "question": "Quale strumento permette di stimare i costi di una soluzione Azure prima della distribuzione?",
+      "options": [
+        "Azure Advisor",
+        "Microsoft Cost Management",
+        "Pricing Calculator",
+        "Azure Monitor"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Il Pricing Calculator consente di stimare i costi prima della distribuzione. Cost Management analizza i costi di risorse già esistenti, Advisor fornisce raccomandazioni e Monitor raccoglie telemetria.",
+      "learnMoreUrl": "https://azure.microsoft.com/pricing/calculator/"
+    },
+    {
+      "id": "az900-010",
+      "type": "ordering",
+      "difficulty": "medium",
+      "topic": "Concetti cloud",
+      "question": "Ordina i modelli di servizio cloud dal minor al maggior livello di responsabilità gestita dal cliente.",
+      "options": [
+        "SaaS",
+        "PaaS",
+        "IaaS",
+        "On-premises"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Con SaaS il cliente gestisce quasi nulla, con PaaS gestisce applicazioni e dati, con IaaS anche runtime e sistema operativo, mentre on-premises gestisce l'intero stack.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility"
+    },
+    {
+      "id": "az900-011",
+      "type": "single",
+      "difficulty": "hard",
+      "topic": "Prezzi e supporto",
+      "question": "Un'azienda ha carichi di lavoro stabili e prevedibili su VM Azure per i prossimi 3 anni. Quale opzione riduce maggiormente i costi?",
+      "options": [
+        "Prezzi pay-as-you-go",
+        "Azure Reservations (istanze riservate)",
+        "Spot Virtual Machines",
+        "Piano di supporto Premier"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Le Azure Reservations offrono sconti fino al 72% rispetto al pay-as-you-go per impegni di 1 o 3 anni, ideali per carichi stabili. Le Spot VM costano meno ma possono essere interrotte in qualsiasi momento.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/cost-management-billing/reservations/save-compute-costs-reservations"
+    },
+    {
+      "id": "az900-012",
+      "type": "truefalse",
+      "difficulty": "hard",
+      "topic": "Architettura e servizi Azure",
+      "question": "Azure Functions è un servizio serverless: il codice viene eseguito senza che il cliente gestisca i server, e nel piano Consumption si paga solo per le esecuzioni.",
+      "correct": [
+        0
+      ],
+      "explanation": "Vero: Azure Functions nel piano Consumption scala automaticamente e fattura in base a esecuzioni, tempo di esecuzione e memoria consumata, senza gestione dell'infrastruttura.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/azure-functions/functions-overview"
+    }
+  ]
+}

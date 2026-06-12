@@ -1,0 +1,34 @@
+{
+  "certifications": [
+    {
+      "id": "az-900",
+      "code": "AZ-900",
+      "title": "Microsoft Azure Fundamentals",
+      "description": "Concetti cloud, servizi Azure di base, sicurezza, governance, prezzi e supporto.",
+      "color": "#22d3ee",
+      "topics": [
+        "Concetti cloud",
+        "Architettura e servizi Azure",
+        "Gestione e governance",
+        "Sicurezza",
+        "Prezzi e supporto"
+      ],
+      "questionFile": "questions/az-900.json"
+    },
+    {
+      "id": "ai-900",
+      "code": "AI-900",
+      "title": "Microsoft Azure AI Fundamentals",
+      "description": "Carichi di lavoro di intelligenza artificiale, machine learning e servizi cognitivi su Azure.",
+      "color": "#fbbf24",
+      "topics": [
+        "Concetti di AI",
+        "Machine Learning",
+        "Computer Vision",
+        "NLP",
+        "AI generativa"
+      ],
+      "questionFile": "questions/ai-900.json"
+    }
+  ]
+}

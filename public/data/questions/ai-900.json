@@ -1,0 +1,113 @@
+{
+  "certificationId": "ai-900",
+  "questions": [
+    {
+      "id": "ai900-001",
+      "type": "single",
+      "difficulty": "easy",
+      "topic": "Concetti di AI",
+      "question": "Quale principio dell'AI responsabile di Microsoft riguarda la capacità di un sistema AI di trattare equamente tutte le persone?",
+      "options": [
+        "Trasparenza",
+        "Equità (fairness)",
+        "Affidabilità e sicurezza",
+        "Responsabilità (accountability)"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Il principio di equità (fairness) richiede che i sistemi AI trattino tutte le persone in modo equo, evitando discriminazioni basate su genere, etnia o altre caratteristiche.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals/"
+    },
+    {
+      "id": "ai900-002",
+      "type": "truefalse",
+      "difficulty": "easy",
+      "topic": "Machine Learning",
+      "question": "Nel machine learning supervisionato, il modello viene addestrato su dati etichettati.",
+      "correct": [
+        0
+      ],
+      "explanation": "Vero: nell'apprendimento supervisionato il dataset di training contiene sia le feature sia le etichette (label) note, che il modello impara a prevedere.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/"
+    },
+    {
+      "id": "ai900-003",
+      "type": "multiple",
+      "difficulty": "medium",
+      "topic": "Computer Vision",
+      "question": "Quali attività sono tipiche dei carichi di lavoro di computer vision? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Classificazione di immagini",
+        "Rilevamento di oggetti (object detection)",
+        "Traduzione di testo",
+        "OCR (riconoscimento ottico dei caratteri)",
+        "Sintesi vocale"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Classificazione di immagini, object detection e OCR sono carichi di computer vision. La traduzione è NLP e la sintesi vocale è un carico di lavoro speech.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/"
+    },
+    {
+      "id": "ai900-004",
+      "type": "single",
+      "difficulty": "medium",
+      "topic": "AI generativa",
+      "question": "Quale servizio Azure permette di accedere a modelli linguistici di grandi dimensioni come GPT-4 tramite API?",
+      "options": [
+        "Azure AI Search",
+        "Azure OpenAI in Foundry Models",
+        "Azure AI Translator",
+        "Azure Machine Learning designer"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Azure OpenAI (parte di Azure AI Foundry) fornisce accesso tramite API ai modelli OpenAI come GPT-4, con sicurezza e conformità enterprise di Azure.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/ai-foundry/openai/overview"
+    },
+    {
+      "id": "ai900-005",
+      "type": "ordering",
+      "difficulty": "hard",
+      "topic": "Machine Learning",
+      "question": "Ordina le fasi tipiche di un progetto di machine learning.",
+      "options": [
+        "Preparazione dei dati",
+        "Addestramento del modello",
+        "Valutazione del modello",
+        "Distribuzione (deployment)"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Il flusso standard è: preparare i dati, addestrare il modello, valutarne le prestazioni su dati di test e infine distribuirlo come servizio.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/"
+    },
+    {
+      "id": "ai900-006",
+      "type": "single",
+      "difficulty": "hard",
+      "topic": "NLP",
+      "question": "Un'azienda vuole estrarre automaticamente sentiment, frasi chiave ed entità da recensioni dei clienti. Quale servizio Azure è più adatto?",
+      "options": [
+        "Azure AI Language",
+        "Azure AI Vision",
+        "Azure AI Speech",
+        "Azure AI Document Intelligence"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Azure AI Language offre sentiment analysis, estrazione di frasi chiave, riconoscimento di entità e altre funzionalità NLP pronte all'uso.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/ai-services/language-service/overview"
+    }
+  ]
+}
