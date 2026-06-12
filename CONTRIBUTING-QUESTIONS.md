@@ -92,8 +92,14 @@ Aggiungi un oggetto all'array `certifications`:
 
 ## 4. Validazione
 
-Prima del commit verifica che:
-1. Il JSON sia sintatticamente valido
-2. Ogni `topic` esista nei `topics` della certificazione
-3. Gli indici in `correct` siano nel range delle `options`
-4. Gli `id` delle domande siano univoci
+Prima del commit esegui sempre:
+
+```bash
+npm run validate   # node scripts/validate-questions.mjs
+```
+
+Lo script verifica automaticamente: JSON validi, id univoci, `topic` coerenti con `index.json`, indici `correct` nel range e coerenti con la tipologia, presenza di `explanation`, copertura dei topic. Deve terminare senza errori.
+
+## 5. Agent dedicato
+
+Nel repo è definito l'agent **`question-curator`** (`.github/agents/question-curator.md`): invocalo per aggiungere nuove certificazioni o ampliare i set di domande. Recupera gli argomenti dalle fonti ufficiali Microsoft Learn, integra con fonti community, fa verifica incrociata delle risposte su più fonti, evita duplicati e valida i dati prima del commit.

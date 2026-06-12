@@ -49,4 +49,6 @@ src/
 
 ## ➕ Aggiungere domande e certificazioni
 
-Vedi [CONTRIBUTING-QUESTIONS.md](CONTRIBUTING-QUESTIONS.md): schema completo dei JSON, semantica del campo `correct` per ogni tipologia e linee guida qualitative. Pensato per essere usato da agent automatici.
+Vedi [CONTRIBUTING-QUESTIONS.md](CONTRIBUTING-QUESTIONS.md): schema completo dei JSON, semantica del campo `correct` per ogni tipologia e linee guida qualitative.
+
+Il repo include l'agent dedicato **`question-curator`** (`.github/agents/question-curator.md`): si attiva quando chiedi di aggiungere una nuova certificazione (≥50 domande) o di ampliare una esistente (≥10 domande nuove). Recupera gli argomenti dalla study guide ufficiale Microsoft Learn, integra con fonti community, verifica le risposte su più fonti, evita duplicati e valida tutto con `npm run validate` prima del commit.
