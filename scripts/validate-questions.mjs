@@ -89,8 +89,9 @@ function validateQuestions(questions, cert) {
     if (q.learnMoreUrl && !/^https:\/\//.test(q.learnMoreUrl)) err(`${label}: learnMoreUrl non è https`)
 
     const optLen = q.type === 'truefalse' && !q.options?.length ? 2 : q.options?.length ?? 0
-    if (q.type !== 'truefalse' && (optLen < 2 || optLen > 6)) {
-      err(`${label}: servono 2-6 options (trovate ${optLen})`)
+    const maxOpts = q.type === 'ordering' ? 7 : 6
+    if (q.type !== 'truefalse' && (optLen < 2 || optLen > maxOpts)) {
+      err(`${label}: servono 2-${maxOpts} options (trovate ${optLen})`)
     }
 
     if (!Array.isArray(q.correct) || q.correct.length === 0) {

@@ -210,6 +210,728 @@
       ],
       "explanation": "Vero: Azure Functions nel piano Consumption scala automaticamente e fattura in base a esecuzioni, tempo di esecuzione e memoria consumata, senza gestione dell'infrastruttura.",
       "learnMoreUrl": "https://learn.microsoft.com/azure/azure-functions/functions-overview"
+    },
+    {
+      "id": "az900-013",
+      "type": "single",
+      "difficulty": "easy",
+      "topic": "Concetti cloud",
+      "question": "Quale definizione descrive meglio il cloud computing?",
+      "options": [
+        "Fornitura di risorse IT, come calcolo, archiviazione e rete, tramite Internet",
+        "Installazione di server fisici esclusivamente nel data center aziendale",
+        "Acquisto anticipato di hardware dedicato per ogni applicazione",
+        "Uso di software solo quando è eseguito offline"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Il cloud computing è la fornitura di risorse IT tramite Internet. Le altre opzioni descrivono ambienti on-premises, spese in conto capitale o vincoli offline che non definiscono il cloud.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/describe-cloud-compute/3-what-cloud-compute"
+    },
+    {
+      "id": "az900-014",
+      "type": "truefalse",
+      "difficulty": "easy",
+      "topic": "Concetti cloud",
+      "question": "Nel modello basato sul consumo, in genere si pagano solo le risorse cloud effettivamente usate.",
+      "correct": [
+        0
+      ],
+      "explanation": "Vero: il modello a consumo consente di pagare in base all'utilizzo effettivo. Non richiede necessariamente l'acquisto anticipato di capacità fissa, anche se configurazioni errate o risorse inutilizzate possono comunque generare costi.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/describe-cloud-compute/6-describe-consumption-based-model"
+    },
+    {
+      "id": "az900-015",
+      "type": "multiple",
+      "difficulty": "medium",
+      "topic": "Concetti cloud",
+      "question": "Quali affermazioni descrivono correttamente scalabilità, elasticità e alta disponibilità nel cloud? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "La scalabilità consente di aumentare o ridurre le risorse per gestire il carico",
+        "L'elasticità può adattare automaticamente le risorse alla domanda",
+        "L'alta disponibilità mira a mantenere un servizio operativo anche in presenza di guasti",
+        "L'alta disponibilità elimina la necessità di backup e ripristino",
+        "La scalabilità richiede sempre l'acquisto fisico di nuovi server"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Scalabilità, elasticità e alta disponibilità riguardano capacità, adattamento dinamico e continuità del servizio. Backup e ripristino restano necessari, e nel cloud la scalabilità non richiede l'acquisto diretto di server fisici.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/describe-benefits-use-cloud-services/"
+    },
+    {
+      "id": "az900-016",
+      "type": "single",
+      "difficulty": "medium",
+      "topic": "Concetti cloud",
+      "question": "In una soluzione SaaS, quale responsabilità resta tipicamente al cliente secondo il modello di responsabilità condivisa?",
+      "options": [
+        "Gestire il sistema operativo dei server",
+        "Applicare patch all'infrastruttura fisica",
+        "Gestire dati, identità e accessi degli utenti",
+        "Gestire l'hypervisor della piattaforma"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Nel SaaS il provider gestisce applicazione, piattaforma e infrastruttura, mentre il cliente resta responsabile di dati, identità e accessi. Sistema operativo, hardware e hypervisor non sono gestiti dal cliente in SaaS.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility"
+    },
+    {
+      "id": "az900-017",
+      "type": "single",
+      "difficulty": "hard",
+      "topic": "Concetti cloud",
+      "question": "Un'azienda deve migrare un'applicazione legacy che richiede personalizzazioni profonde del sistema operativo, ma non vuole acquistare hardware. Quale modello di servizio cloud è più adatto?",
+      "options": [
+        "SaaS",
+        "PaaS",
+        "IaaS",
+        "Desktop as a Service"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "IaaS offre VM e infrastruttura virtualizzata con controllo sul sistema operativo. PaaS riduce la gestione dell'OS, SaaS fornisce applicazioni già gestite e Desktop as a Service non è il modello generale per ospitare un'app legacy server-side.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/2-describe-infrastructure-service"
+    },
+    {
+      "id": "az900-018",
+      "type": "multiple",
+      "difficulty": "medium",
+      "topic": "Concetti cloud",
+      "question": "Quali scenari sono esempi corretti di modelli di distribuzione cloud? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Cloud ibrido: mantenere alcuni sistemi on-premises e usare Azure per nuovi carichi o picchi",
+        "Cloud pubblico: usare servizi condivisi offerti da un provider tramite Internet",
+        "Cloud privato: ambiente cloud dedicato a una singola organizzazione",
+        "Cloud pubblico: risorse fisiche sempre installate nel data center del cliente",
+        "Cloud ibrido: ambiente in cui non può esistere alcuna connessione tra on-premises e cloud"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "I tre scenari corretti riflettono ibrido, pubblico e privato. Nel cloud pubblico l'hardware non è necessariamente nel data center del cliente; nel modello ibrido l'integrazione tra ambienti è proprio un elemento chiave.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/describe-cloud-compute/5-define-cloud-models"
+    },
+    {
+      "id": "az900-019",
+      "type": "truefalse",
+      "difficulty": "medium",
+      "topic": "Concetti cloud",
+      "question": "Serverless significa che il cliente non gestisce i server sottostanti, ma resta responsabile del proprio codice, dei dati e della configurazione dell'applicazione.",
+      "correct": [
+        0
+      ],
+      "explanation": "Vero: serverless astrae la gestione dei server, ma non elimina la responsabilità del cliente su codice, dati, sicurezza applicativa e configurazioni. Non significa assenza fisica di server.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/azure-functions/functions-overview"
+    },
+    {
+      "id": "az900-020",
+      "type": "single",
+      "difficulty": "easy",
+      "topic": "Concetti cloud",
+      "question": "Quale vantaggio finanziario è tipico del passaggio al cloud pubblico?",
+      "options": [
+        "Spostare parte della spesa da CapEx a OpEx",
+        "Eliminare sempre ogni costo operativo",
+        "Acquistare obbligatoriamente capacità per cinque anni",
+        "Pagare solo licenze perpetue on-premises"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Il cloud può trasformare investimenti iniziali in hardware in spesa operativa basata sull'uso. Non elimina automaticamente tutti i costi, non impone impegni pluriennali e non si basa solo su licenze perpetue on-premises.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/describe-cloud-compute/6-describe-consumption-based-model"
+    },
+    {
+      "id": "az900-021",
+      "type": "single",
+      "difficulty": "hard",
+      "topic": "Concetti cloud",
+      "question": "Un'applicazione esegue codice solo quando arrivano eventi sporadici e deve scalare automaticamente senza gestione dei server. Quale opzione è più appropriata?",
+      "options": [
+        "Azure Functions",
+        "Una VM sempre accesa con dimensione fissa",
+        "Un file share Azure Files",
+        "Una rete virtuale con peering"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Azure Functions è adatta a elaborazioni event-driven serverless. Una VM fissa richiede gestione e può restare accesa inutilmente; Azure Files è storage e il peering VNet è networking, non esecuzione di codice.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/azure-functions/functions-overview"
+    },
+    {
+      "id": "az900-022",
+      "type": "multiple",
+      "difficulty": "hard",
+      "topic": "Concetti cloud",
+      "question": "Quali caratteristiche sono tipiche di una soluzione SaaS? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Gli utenti accedono all'applicazione tramite Internet",
+        "Il provider gestisce applicazione e piattaforma sottostante",
+        "Il cliente gestisce configurazioni, dati e accessi consentiti dal servizio",
+        "Il cliente applica patch al sistema operativo dei server del servizio",
+        "Il cliente deve prenotare rack fisici nel data center del provider"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "SaaS fornisce un'app gestita dal provider e accessibile via Internet, con responsabilità del cliente su dati, configurazione e accessi. Patch dell'OS e rack fisici sono responsabilità del provider o non pertinenti.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/4-describe-software-service"
+    },
+    {
+      "id": "az900-023",
+      "type": "truefalse",
+      "difficulty": "easy",
+      "topic": "Concetti cloud",
+      "question": "Alta disponibilità indica la capacità di un servizio di rimanere accessibile anche in caso di guasti, ma non garantisce automaticamente latenza zero.",
+      "correct": [
+        0
+      ],
+      "explanation": "Vero: l'alta disponibilità riguarda la continuità del servizio e la riduzione del downtime. La latenza dipende da progettazione, rete e posizione degli utenti; quindi i distrattori impliciti 'sempre zero downtime' o 'latenza zero' sarebbero errati.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/describe-benefits-use-cloud-services/2-high-availability-scalability-cloud"
+    },
+    {
+      "id": "az900-024",
+      "type": "single",
+      "difficulty": "easy",
+      "topic": "Architettura e servizi Azure",
+      "question": "Che cos'è un resource group in Azure?",
+      "options": [
+        "Un contenitore logico per risorse Azure correlate",
+        "Una regione fisica composta da data center",
+        "Un piano di supporto tecnico",
+        "Un tenant Microsoft Entra ID"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Un resource group è un contenitore logico per gestire risorse correlate. Non è una regione fisica, un piano di supporto o un tenant di identità.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal"
+    },
+    {
+      "id": "az900-025",
+      "type": "multiple",
+      "difficulty": "medium",
+      "topic": "Architettura e servizi Azure",
+      "question": "Quali affermazioni descrivono correttamente regioni, coppie di regioni e regioni sovrane di Azure? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Una regione Azure è un'area geografica che contiene uno o più data center",
+        "Le region pair aiutano la resilienza e il rollout coordinato degli aggiornamenti",
+        "Le regioni sovrane sono progettate per requisiti specifici di residenza, conformità o sovranità dei dati",
+        "Ogni regione Azure è automaticamente una availability zone",
+        "Una resource group deve sempre contenere risorse di una sola regione"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Regioni, region pair e regioni sovrane hanno ruoli architetturali distinti. Una regione non coincide necessariamente con una zona di disponibilità, e un resource group può contenere risorse distribuite in regioni diverse.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/describe-core-architectural-components-of-azure/3-regions-region-pairs-sovereign-regions"
+    },
+    {
+      "id": "az900-026",
+      "type": "single",
+      "difficulty": "medium",
+      "topic": "Architettura e servizi Azure",
+      "question": "Un servizio deve eseguire più VM identiche e aumentare automaticamente il numero di istanze in base al carico. Quale funzionalità Azure è più adatta?",
+      "options": [
+        "Azure Virtual Machine Scale Sets",
+        "Azure Storage Explorer",
+        "Azure DNS Private Resolver",
+        "Microsoft Purview"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Virtual Machine Scale Sets gestisce gruppi di VM identiche con scaling. Storage Explorer è uno strumento per storage, DNS Private Resolver riguarda la risoluzione DNS e Purview la governance dei dati.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/overview"
+    },
+    {
+      "id": "az900-027",
+      "type": "truefalse",
+      "difficulty": "medium",
+      "topic": "Architettura e servizi Azure",
+      "question": "Il peering di reti virtuali consente a due reti virtuali Azure di comunicare usando la rete backbone Microsoft, senza passare per Internet pubblico.",
+      "correct": [
+        0
+      ],
+      "explanation": "Vero: il VNet peering collega reti virtuali tramite l'infrastruttura privata Microsoft. Non è un servizio di storage né una VPN Internet tradizionale, anche se restano necessarie regole di routing e sicurezza appropriate.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/virtual-network/virtual-network-peering-overview"
+    },
+    {
+      "id": "az900-028",
+      "type": "single",
+      "difficulty": "hard",
+      "topic": "Architettura e servizi Azure",
+      "question": "Un'azienda vuole collegare il proprio data center ad Azure con una connessione privata dedicata, non instradata sulla rete Internet pubblica. Quale servizio dovrebbe scegliere?",
+      "options": [
+        "Azure ExpressRoute",
+        "Azure VPN Gateway con connessione site-to-site",
+        "Azure Blob Storage",
+        "Azure Bastion"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "ExpressRoute offre connettività privata dedicata verso Azure. VPN Gateway usa tunnel cifrati su Internet, Blob Storage archivia dati e Azure Bastion fornisce accesso sicuro a VM, non connettività privata dedicata WAN.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/expressroute/expressroute-introduction"
+    },
+    {
+      "id": "az900-029",
+      "type": "multiple",
+      "difficulty": "medium",
+      "topic": "Architettura e servizi Azure",
+      "question": "Quali affermazioni sulle opzioni di ridondanza di Azure Storage sono corrette? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "LRS mantiene tre copie dei dati in una singola area primaria",
+        "ZRS replica i dati in modo sincrono tra zone di disponibilità nella regione primaria",
+        "GRS replica i dati anche in una regione secondaria abbinata",
+        "LRS protegge automaticamente da un'interruzione completa della regione",
+        "ZRS richiede sempre una regione secondaria"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "LRS, ZRS e GRS offrono livelli diversi di ridondanza. LRS non protegge da perdita dell'intera regione; ZRS resta nella regione primaria e non richiede una regione secondaria.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/storage/common/storage-redundancy"
+    },
+    {
+      "id": "az900-030",
+      "type": "ordering",
+      "difficulty": "hard",
+      "topic": "Architettura e servizi Azure",
+      "question": "Ordina le opzioni di ridondanza di Azure Storage dalla minore alla maggiore resilienza geografica complessiva.",
+      "options": [
+        "GRS",
+        "LRS",
+        "GZRS",
+        "ZRS"
+      ],
+      "correct": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "explanation": "LRS resta nel perimetro più limitato; ZRS aggiunge replica tra zone della regione primaria; GRS aggiunge una regione secondaria; GZRS combina replica tra zone nella primaria e replica geografica. Le altre sequenze confonderebbero resilienza locale e geografica.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/storage/common/storage-redundancy"
+    },
+    {
+      "id": "az900-031",
+      "type": "single",
+      "difficulty": "easy",
+      "topic": "Architettura e servizi Azure",
+      "question": "Quale servizio Azure Storage è progettato per dati oggetto non strutturati, come immagini, video e backup?",
+      "options": [
+        "Azure Blob Storage",
+        "Azure Queue Storage",
+        "Azure Table Storage",
+        "Azure Files"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Blob Storage è lo storage a oggetti per dati non strutturati. Queue Storage gestisce messaggi, Table Storage dati NoSQL chiave/attributo e Azure Files condivisioni file SMB/NFS.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/storage/blobs/storage-blobs-introduction"
+    },
+    {
+      "id": "az900-032",
+      "type": "multiple",
+      "difficulty": "hard",
+      "topic": "Architettura e servizi Azure",
+      "question": "Un team deve spostare dati verso Azure Storage. Quali strumenti o servizi sono pertinenti allo spostamento o alla sincronizzazione dei file? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "AzCopy",
+        "Azure Storage Explorer",
+        "Azure File Sync",
+        "Azure Data Box",
+        "Azure DNS"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "AzCopy, Storage Explorer, File Sync e Data Box sono opzioni per trasferire, gestire o sincronizzare dati. Azure DNS gestisce zone e record DNS, quindi non è uno strumento di migrazione file.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/describe-azure-storage-services/7-identify-azure-file-movement-options"
+    },
+    {
+      "id": "az900-033",
+      "type": "truefalse",
+      "difficulty": "easy",
+      "topic": "Architettura e servizi Azure",
+      "question": "Gli availability set distribuiscono VM tra domini di errore e domini di aggiornamento, ma non equivalgono a una distribuzione tra Availability Zone.",
+      "correct": [
+        0
+      ],
+      "explanation": "Vero: gli availability set riducono l'impatto di guasti hardware e aggiornamenti pianificati in un data center, mentre le Availability Zone sono località fisicamente separate in una regione. Confonderli porterebbe a sovrastimare la resilienza dell'availability set.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/virtual-machines/availability-set-overview"
+    },
+    {
+      "id": "az900-034",
+      "type": "single",
+      "difficulty": "medium",
+      "topic": "Architettura e servizi Azure",
+      "question": "Un team vuole ospitare un'applicazione web in Azure senza gestire direttamente sistema operativo e web server. Quale servizio è più appropriato?",
+      "options": [
+        "Azure App Service",
+        "Azure Virtual Machines",
+        "Azure Virtual Network",
+        "Azure Disk Storage"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Azure App Service è una piattaforma gestita per web app. Le VM richiedono più gestione dell'OS, Virtual Network è networking e Disk Storage fornisce dischi, non hosting web gestito.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/app-service/overview"
+    },
+    {
+      "id": "az900-035",
+      "type": "multiple",
+      "difficulty": "medium",
+      "topic": "Architettura e servizi Azure",
+      "question": "Quali risorse sono tipicamente necessarie o associate alla creazione di una macchina virtuale Azure? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Interfaccia di rete virtuale (NIC)",
+        "Disco del sistema operativo",
+        "Rete virtuale e subnet",
+        "Database Azure SQL obbligatorio",
+        "Account Microsoft Purview obbligatorio"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Una VM usa una NIC, un disco del sistema operativo e una rete/subnet per la connettività. Azure SQL e Microsoft Purview possono essere servizi complementari, ma non sono requisiti per creare una VM.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/describe-azure-compute-networking-services/2-virtual-machines"
+    },
+    {
+      "id": "az900-036",
+      "type": "single",
+      "difficulty": "medium",
+      "topic": "Architettura e servizi Azure",
+      "question": "Quale funzionalità consente di accedere a un servizio PaaS Azure tramite un indirizzo IP privato nella propria rete virtuale?",
+      "options": [
+        "Private Endpoint",
+        "Public Endpoint",
+        "Azure Policy",
+        "Availability Set"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Private Endpoint espone il servizio tramite un IP privato nella VNet. Public Endpoint usa un endpoint pubblico, Azure Policy governa la conformità e Availability Set riguarda la disponibilità delle VM.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/private-link/private-endpoint-overview"
+    },
+    {
+      "id": "az900-037",
+      "type": "truefalse",
+      "difficulty": "hard",
+      "topic": "Architettura e servizi Azure",
+      "question": "Un public endpoint di Azure bypassa sempre autenticazione, autorizzazione e regole firewall del servizio.",
+      "correct": [
+        1
+      ],
+      "explanation": "Falso: un endpoint pubblico indica raggiungibilità tramite indirizzo pubblico, ma autenticazione, autorizzazione, firewall e restrizioni di rete possono comunque essere applicati. Dire che li bypassa sempre renderebbe il servizio intrinsecamente insicuro, cosa non corretta.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/private-link/private-endpoint-overview"
+    },
+    {
+      "id": "az900-038",
+      "type": "single",
+      "difficulty": "easy",
+      "topic": "Sicurezza",
+      "question": "Quale metodo richiede agli utenti una verifica aggiuntiva oltre alla password?",
+      "options": [
+        "Autenticazione a più fattori (MFA)",
+        "Tag delle risorse",
+        "Azure Resource Manager template",
+        "Availability Set"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "MFA richiede uno o più fattori aggiuntivi. Tag, template ARM e availability set non sono metodi di autenticazione degli utenti.",
+      "learnMoreUrl": "https://learn.microsoft.com/entra/identity/authentication/concept-mfa-howitworks"
+    },
+    {
+      "id": "az900-039",
+      "type": "multiple",
+      "difficulty": "hard",
+      "topic": "Sicurezza",
+      "question": "Quali affermazioni descrivono correttamente i ruoli RBAC predefiniti di Azure? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Owner può gestire le risorse e assegnare accessi ad altri utenti",
+        "Contributor può creare e gestire risorse, ma non concedere accesso ad altri utenti",
+        "Reader può visualizzare risorse senza modificarle",
+        "Reader può eliminare resource group se eredita un tag corretto",
+        "Contributor è sempre più privilegiato di Owner"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Owner, Contributor e Reader hanno privilegi decrescenti: Owner gestisce anche accessi, Contributor gestisce risorse senza assegnare accessi e Reader visualizza. I tag non concedono permessi e Owner è più privilegiato di Contributor.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles"
+    },
+    {
+      "id": "az900-040",
+      "type": "truefalse",
+      "difficulty": "medium",
+      "topic": "Sicurezza",
+      "question": "Microsoft Entra Conditional Access può valutare segnali come utente, posizione, dispositivo o rischio e applicare controlli come richiedere MFA.",
+      "correct": [
+        0
+      ],
+      "explanation": "Vero: Conditional Access usa segnali per prendere decisioni di accesso e può richiedere MFA o bloccare accessi. Non è uno strumento di backup o di stima costi.",
+      "learnMoreUrl": "https://learn.microsoft.com/entra/identity/conditional-access/overview"
+    },
+    {
+      "id": "az900-041",
+      "type": "single",
+      "difficulty": "medium",
+      "topic": "Sicurezza",
+      "question": "Quale servizio Azure è progettato per archiviare e gestire in modo sicuro segreti, chiavi e certificati?",
+      "options": [
+        "Azure Key Vault",
+        "Azure Monitor",
+        "Azure App Service",
+        "Azure Route Table"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Azure Key Vault gestisce segreti, chiavi e certificati. Monitor raccoglie telemetria, App Service ospita applicazioni web e Route Table controlla il routing di rete.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/key-vault/general/overview"
+    },
+    {
+      "id": "az900-042",
+      "type": "ordering",
+      "difficulty": "hard",
+      "topic": "Sicurezza",
+      "question": "Ordina gli strati tipici del modello defense-in-depth dal più esterno al più vicino ai dati.",
+      "options": [
+        "Sicurezza fisica",
+        "Identità e accesso",
+        "Perimetro",
+        "Rete",
+        "Calcolo",
+        "Applicazione",
+        "Dati"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "explanation": "Il modello defense-in-depth usa più livelli: fisico, identità/accesso, perimetro, rete, calcolo, applicazione e dati. Mettere i dati all'esterno o il perimetro dopo l'applicazione confonderebbe il posizionamento degli strati di difesa.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/describe-azure-identity-access-security/8-describe-defense-depth"
+    },
+    {
+      "id": "az900-043",
+      "type": "single",
+      "difficulty": "easy",
+      "topic": "Gestione e governance",
+      "question": "Qual è uno scopo comune dei tag in Azure?",
+      "options": [
+        "Organizzare risorse e analizzare costi per reparti, progetti o ambienti",
+        "Crittografare automaticamente tutti i dati a riposo",
+        "Sostituire completamente Azure RBAC",
+        "Creare una regione Azure sovrana"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "I tag aggiungono metadati utili per organizzazione, reporting e cost allocation. Non cifrano dati, non sostituiscono RBAC e non creano regioni.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/azure-resource-manager/management/tag-resources"
+    },
+    {
+      "id": "az900-044",
+      "type": "multiple",
+      "difficulty": "medium",
+      "topic": "Gestione e governance",
+      "question": "Quali affermazioni sui resource lock di Azure sono corrette? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "CanNotDelete impedisce l'eliminazione della risorsa protetta",
+        "ReadOnly impedisce modifiche e operazioni di eliminazione sulla risorsa protetta",
+        "Un lock applicato a un resource group può essere ereditato dalle risorse contenute",
+        "I lock concedono automaticamente privilegi Owner agli utenti",
+        "I lock sostituiscono la necessità di backup"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "CanNotDelete, ReadOnly ed ereditarietà dei lock sono comportamenti supportati. I lock non concedono permessi e non sono un meccanismo di backup o ripristino.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/azure-resource-manager/management/lock-resources"
+    },
+    {
+      "id": "az900-045",
+      "type": "truefalse",
+      "difficulty": "easy",
+      "topic": "Gestione e governance",
+      "question": "Un template ARM descrive in modo dichiarativo le risorse Azure da distribuire e può essere usato come infrastructure as code.",
+      "correct": [
+        0
+      ],
+      "explanation": "Vero: i template ARM sono file dichiarativi per distribuire risorse in modo ripetibile. Non sono script manuali del portale e non servono a stimare i prezzi.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/azure-resource-manager/templates/overview"
+    },
+    {
+      "id": "az900-046",
+      "type": "ordering",
+      "difficulty": "medium",
+      "topic": "Gestione e governance",
+      "question": "Ordina una sequenza tipica per distribuire risorse con un template ARM.",
+      "options": [
+        "Distribuire il template",
+        "Definire risorse e parametri nel template",
+        "Validare il template",
+        "Verificare la cronologia e lo stato del deployment"
+      ],
+      "correct": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "explanation": "Prima si definiscono risorse e parametri, poi si valida, si distribuisce e infine si controlla lo stato del deployment. Distribuire prima di definire o validare aumenterebbe il rischio di errori.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/azure-resource-manager/templates/overview"
+    },
+    {
+      "id": "az900-047",
+      "type": "single",
+      "difficulty": "medium",
+      "topic": "Gestione e governance",
+      "question": "Un'organizzazione vuole applicare strumenti di gestione Azure a server on-premises e in altri cloud. Quale servizio è più indicato?",
+      "options": [
+        "Azure Arc",
+        "Azure Files",
+        "Azure Queue Storage",
+        "Azure DNS"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Azure Arc estende la gestione Azure a risorse on-premises e multicloud. Azure Files e Queue Storage sono servizi di storage, mentre Azure DNS gestisce nomi DNS.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/azure-arc/overview"
+    },
+    {
+      "id": "az900-048",
+      "type": "single",
+      "difficulty": "hard",
+      "topic": "Gestione e governance",
+      "question": "Un amministratore vuole raccomandazioni personalizzate per migliorare costo, sicurezza, affidabilità, prestazioni ed eccellenza operativa delle risorse Azure. Quale strumento dovrebbe consultare?",
+      "options": [
+        "Azure Advisor",
+        "Azure Service Health",
+        "Azure Storage Explorer",
+        "Azure Bastion"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Azure Advisor fornisce raccomandazioni basate sulle best practice. Service Health comunica problemi e manutenzioni dei servizi Azure, Storage Explorer gestisce dati storage e Bastion consente accesso sicuro alle VM.",
+      "learnMoreUrl": "https://learn.microsoft.com/azure/advisor/advisor-overview"
+    },
+    {
+      "id": "az900-049",
+      "type": "single",
+      "difficulty": "medium",
+      "topic": "Gestione e governance",
+      "question": "Quale soluzione Microsoft aiuta a governare, catalogare e proteggere dati in ambienti aziendali e cloud?",
+      "options": [
+        "Microsoft Purview",
+        "Azure Virtual Desktop",
+        "Azure Load Balancer",
+        "Azure Container Instances"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Microsoft Purview è orientato alla governance, catalogazione e protezione dei dati. Virtual Desktop eroga desktop/app, Load Balancer distribuisce traffico e Container Instances esegue container.",
+      "learnMoreUrl": "https://learn.microsoft.com/purview/purview"
+    },
+    {
+      "id": "az900-050",
+      "type": "multiple",
+      "difficulty": "easy",
+      "topic": "Prezzi e supporto",
+      "question": "Quali fattori possono influire sui costi di una soluzione Azure? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Tipo e dimensione delle risorse usate",
+        "Area geografica o regione di distribuzione",
+        "Traffico dati in uscita",
+        "Tempo di utilizzo delle risorse",
+        "Colore scelto per il portale Azure"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Tipo, regione, traffico e durata d'uso influenzano i costi. Il colore o tema del portale non modifica la fatturazione dei servizi Azure.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/describe-cost-management-azure/2-describe-factors-affect-costs-azure"
+    },
+    {
+      "id": "az900-051",
+      "type": "ordering",
+      "difficulty": "medium",
+      "topic": "Prezzi e supporto",
+      "question": "Ordina una sequenza pratica per pianificare e controllare i costi di una nuova soluzione Azure.",
+      "options": [
+        "Creare budget e avvisi in Microsoft Cost Management",
+        "Stimare i costi con Pricing Calculator o TCO Calculator",
+        "Applicare tag coerenti alle risorse distribuite",
+        "Analizzare raccomandazioni di ottimizzazione, ad esempio con Azure Advisor"
+      ],
+      "correct": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "explanation": "Prima si stimano i costi, poi si organizzano le risorse con tag, si monitorano con budget/avvisi e infine si ottimizza. Partire dall'ottimizzazione senza stima o dati di monitoraggio sarebbe prematuro.",
+      "learnMoreUrl": "https://learn.microsoft.com/training/modules/describe-cost-management-azure/"
+    },
+    {
+      "id": "az900-052",
+      "type": "single",
+      "difficulty": "easy",
+      "topic": "Prezzi e supporto",
+      "question": "Quale documento o impegno descrive gli obiettivi di disponibilità garantiti finanziariamente per molti servizi Azure?",
+      "options": [
+        "Service Level Agreement (SLA)",
+        "Resource group",
+        "Tag di ambiente",
+        "Azure Resource Manager template"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Gli SLA descrivono gli impegni di disponibilità e gli eventuali crediti di servizio. Resource group, tag e template ARM aiutano gestione e distribuzione, ma non sono impegni di disponibilità finanziariamente supportati.",
+      "learnMoreUrl": "https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services"
     }
   ]
 }
