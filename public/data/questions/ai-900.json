@@ -5,7 +5,7 @@
       "id": "ai900-001",
       "type": "single",
       "difficulty": "easy",
-      "topic": "Concetti di AI",
+      "topic": "Carichi di lavoro AI",
       "question": "Quale principio dell'AI responsabile di Microsoft riguarda la capacità di un sistema AI di trattare equamente tutte le persone?",
       "options": [
         "Trasparenza",
@@ -16,8 +16,8 @@
       "correct": [
         1
       ],
-      "explanation": "Il principio di equità (fairness) richiede che i sistemi AI trattino tutte le persone in modo equo, evitando discriminazioni basate su genere, etnia o altre caratteristiche.",
-      "learnMoreUrl": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals/"
+      "explanation": "Il principio di equità (fairness) richiede che i sistemi AI trattino tutte le persone in modo equo, evitando discriminazioni basate su genere, etnia o altre caratteristiche. Trasparenza, affidabilità e accountability sono principi importanti, ma non descrivono direttamente il trattamento equo.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/get-started-ai-fundamentals/"
     },
     {
       "id": "ai900-002",
@@ -28,8 +28,8 @@
       "correct": [
         0
       ],
-      "explanation": "Vero: nell'apprendimento supervisionato il dataset di training contiene sia le feature sia le etichette (label) note, che il modello impara a prevedere.",
-      "learnMoreUrl": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/"
+      "explanation": "Vero: nell'apprendimento supervisionato il dataset di training contiene sia le feature sia le etichette (label) note, che il modello impara a prevedere. Questo lo distingue da approcci non supervisionati come il clustering.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/"
     },
     {
       "id": "ai900-003",
@@ -49,8 +49,8 @@
         1,
         3
       ],
-      "explanation": "Classificazione di immagini, object detection e OCR sono carichi di computer vision. La traduzione è NLP e la sintesi vocale è un carico di lavoro speech.",
-      "learnMoreUrl": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/"
+      "explanation": "Classificazione di immagini, object detection e OCR sono carichi di computer vision. La traduzione è un'attività di linguaggio naturale e la sintesi vocale appartiene ai carichi di lavoro speech, quindi sono distrattori errati.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/"
     },
     {
       "id": "ai900-004",
@@ -67,8 +67,8 @@
       "correct": [
         1
       ],
-      "explanation": "Azure OpenAI (parte di Azure AI Foundry) fornisce accesso tramite API ai modelli OpenAI come GPT-4, con sicurezza e conformità enterprise di Azure.",
-      "learnMoreUrl": "https://learn.microsoft.com/azure/ai-foundry/openai/overview"
+      "explanation": "Azure OpenAI in Foundry Models fornisce accesso tramite API ai modelli OpenAI come GPT-4. Azure AI Search indicizza contenuti, Translator traduce testo e Machine Learning designer serve per pipeline ML, quindi non espongono direttamente GPT-4 come servizio gestito.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     },
     {
       "id": "ai900-005",
@@ -88,14 +88,14 @@
         2,
         3
       ],
-      "explanation": "Il flusso standard è: preparare i dati, addestrare il modello, valutarne le prestazioni su dati di test e infine distribuirlo come servizio.",
-      "learnMoreUrl": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/"
+      "explanation": "Il flusso standard è: preparare i dati, addestrare il modello, valutarne le prestazioni su dati di test e infine distribuirlo come servizio. Invertire l'ordine porterebbe a valutare o distribuire un modello non ancora pronto.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/"
     },
     {
       "id": "ai900-006",
       "type": "single",
       "difficulty": "hard",
-      "topic": "NLP",
+      "topic": "Elaborazione del linguaggio naturale (NLP)",
       "question": "Un'azienda vuole estrarre automaticamente sentiment, frasi chiave ed entità da recensioni dei clienti. Quale servizio Azure è più adatto?",
       "options": [
         "Azure AI Language",
@@ -106,8 +106,553 @@
       "correct": [
         0
       ],
-      "explanation": "Azure AI Language offre sentiment analysis, estrazione di frasi chiave, riconoscimento di entità e altre funzionalità NLP pronte all'uso.",
-      "learnMoreUrl": "https://learn.microsoft.com/azure/ai-services/language-service/overview"
+      "explanation": "Azure AI Language offre sentiment analysis, estrazione di frasi chiave e riconoscimento di entità. Vision analizza immagini, Speech gestisce audio e voce, mentre Document Intelligence estrae struttura e campi dai documenti, quindi non sono la scelta corretta per questo scenario testuale.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview"
+    },
+    {
+      "id": "ai900-007",
+      "type": "single",
+      "difficulty": "easy",
+      "topic": "Carichi di lavoro AI",
+      "question": "Un'azienda vuole un sistema che risponda automaticamente alle domande frequenti dei clienti in linguaggio naturale tramite chat. Quale carico di lavoro AI è più adatto?",
+      "options": [
+        "Rilevamento anomalie",
+        "IA conversazionale",
+        "Computer Vision",
+        "Forecasting numerico"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "L'IA conversazionale è il carico di lavoro corretto perché gestisce dialoghi in linguaggio naturale con gli utenti. Il rilevamento anomalie serve a trovare comportamenti insoliti, la computer vision analizza immagini o video e il forecasting numerico prevede valori futuri, quindi non sono adatti a una chat FAQ.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/get-started-ai-fundamentals/"
+    },
+    {
+      "id": "ai900-008",
+      "type": "multiple",
+      "difficulty": "medium",
+      "topic": "Carichi di lavoro AI",
+      "question": "Quali pratiche aiutano a rendere un'applicazione AI più responsabile? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Informare gli utenti che stanno interagendo con un sistema AI",
+        "Limitare l'accesso ai dati sensibili",
+        "Ignorare i casi in cui il modello sbaglia",
+        "Prevedere revisione umana per decisioni ad alto impatto",
+        "Rimuovere ogni log di utilizzo"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Informare gli utenti aumenta la trasparenza, limitare l'accesso ai dati supporta privacy e sicurezza e la revisione umana aggiunge supervisione per scenari sensibili. Ignorare gli errori impedisce il miglioramento del sistema, mentre eliminare ogni log ostacola monitoraggio e accountability, quindi sono distrattori errati.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/foundry/responsible-use-of-ai-overview"
+    },
+    {
+      "id": "ai900-009",
+      "type": "truefalse",
+      "difficulty": "medium",
+      "topic": "Carichi di lavoro AI",
+      "question": "Un sistema che analizza il flusso video di una telecamera per contare quante persone entrano in un negozio usa un carico di lavoro di computer vision.",
+      "correct": [
+        0
+      ],
+      "explanation": "Vero: contare persone da un video richiede l'analisi di immagini o fotogrammi, quindi rientra nella computer vision. Non è un carico di linguaggio naturale o di AI generativa, perché non sta interpretando testo né creando nuovo contenuto.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/"
+    },
+    {
+      "id": "ai900-010",
+      "type": "ordering",
+      "difficulty": "hard",
+      "topic": "Carichi di lavoro AI",
+      "question": "Ordina le fasi logiche di un assistente virtuale che risponde a una richiesta vocale dell'utente.",
+      "options": [
+        "Acquisire l'audio dell'utente",
+        "Trascrivere o interpretare il testo",
+        "Determinare l'intento e formulare la risposta",
+        "Restituire la risposta all'utente"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Prima il sistema acquisisce l'audio, poi lo trascrive o interpreta, quindi comprende l'intento e prepara la risposta, infine la restituisce all'utente. Cambiare l'ordine significherebbe cercare di rispondere prima di aver capito la richiesta.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/get-started-ai-fundamentals/"
+    },
+    {
+      "id": "ai900-011",
+      "type": "single",
+      "difficulty": "easy",
+      "topic": "Carichi di lavoro AI",
+      "question": "Hai migliaia di moduli scannerizzati e vuoi estrarre automaticamente campi come nome cliente e numero ordine. Quale carico di lavoro AI stai usando principalmente?",
+      "options": [
+        "Elaborazione di documenti",
+        "Riconoscimento vocale",
+        "Generazione di immagini",
+        "Clustering"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "L'elaborazione di documenti è il carico di lavoro corretto perché combina OCR e analisi della struttura per estrarre dati da moduli e fatture. Il riconoscimento vocale lavora su audio, la generazione di immagini crea nuovo contenuto visivo e il clustering raggruppa dati senza etichette, quindi non sono adatti a questo scenario.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview"
+    },
+    {
+      "id": "ai900-012",
+      "type": "single",
+      "difficulty": "medium",
+      "topic": "Carichi di lavoro AI",
+      "question": "Quale principio di AI responsabile è più direttamente coinvolto quando un'organizzazione deve poter spiegare a un revisore perché un sistema AI ha prodotto un certo risultato?",
+      "options": [
+        "Trasparenza",
+        "Scalabilità",
+        "Compressione del modello",
+        "Sharding dei dati"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "La trasparenza è il principio corretto perché riguarda la comprensibilità del comportamento e dei risultati del sistema AI. Scalabilità, compressione del modello e sharding dei dati sono tecniche architetturali o di ottimizzazione, non principi di AI responsabile legati alla spiegabilità.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/foundry/responsible-use-of-ai-overview"
+    },
+    {
+      "id": "ai900-013",
+      "type": "single",
+      "difficulty": "easy",
+      "topic": "Machine Learning",
+      "question": "Se vuoi prevedere il prezzo futuro di una casa a partire da superficie, zona e numero di stanze, quale tipo di problema di machine learning stai affrontando?",
+      "options": [
+        "Classificazione",
+        "Regressione",
+        "Clustering",
+        "Rilevamento entità"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "La regressione è corretta perché il prezzo è un valore numerico continuo da prevedere. La classificazione produce categorie discrete, il clustering raggruppa dati senza etichette e il rilevamento entità è un compito NLP, quindi non rispondono al problema.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/"
+    },
+    {
+      "id": "ai900-014",
+      "type": "multiple",
+      "difficulty": "medium",
+      "topic": "Machine Learning",
+      "question": "Quali elementi possono essere usati come feature per addestrare un modello che stima il consumo elettrico di un edificio? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Temperatura esterna",
+        "Ora del giorno",
+        "Consumo elettrico dei giorni precedenti",
+        "Il valore futuro esatto di consumo che vuoi prevedere",
+        "Il colore del logo aziendale"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Temperatura, ora del giorno e consumi storici sono feature utili perché possono influenzare il consumo futuro. Il valore futuro esatto da prevedere è la label, non un input disponibile in anticipo, mentre il colore del logo è irrilevante e quindi è un distrattore errato.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/"
+    },
+    {
+      "id": "ai900-015",
+      "type": "truefalse",
+      "difficulty": "easy",
+      "topic": "Machine Learning",
+      "question": "Il clustering è una tecnica di apprendimento non supervisionato.",
+      "correct": [
+        0
+      ],
+      "explanation": "Vero: il clustering raggruppa elementi simili senza richiedere etichette note in fase di training. Per questo è diverso dall'apprendimento supervisionato, che usa esempi già etichettati.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/"
+    },
+    {
+      "id": "ai900-016",
+      "type": "single",
+      "difficulty": "hard",
+      "topic": "Machine Learning",
+      "question": "Quale architettura di deep learning è particolarmente adatta a comprendere relazioni tra parole in una sequenza ed è alla base di molti modelli linguistici moderni?",
+      "options": [
+        "Rete neurale convoluzionale (CNN)",
+        "Transformer",
+        "K-means",
+        "Regressione lineare"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Transformer è la risposta corretta perché gestisce in modo efficace le dipendenze tra token in una sequenza ed è alla base di molti modelli linguistici moderni. Le CNN sono usate soprattutto in scenari visivi, K-means è un algoritmo di clustering e la regressione lineare prevede valori numerici continui.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/"
+    },
+    {
+      "id": "ai900-017",
+      "type": "single",
+      "difficulty": "medium",
+      "topic": "Machine Learning",
+      "question": "Quale funzionalità di Azure Machine Learning aiuta a provare automaticamente più algoritmi e iperparametri per trovare il modello con prestazioni migliori?",
+      "options": [
+        "Azure AI Search",
+        "Automated ML",
+        "Document Intelligence Studio",
+        "Content Safety"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Automated ML è corretto perché automatizza la ricerca di algoritmi, tecniche di preprocessing e iperparametri. Azure AI Search indicizza contenuti, Document Intelligence Studio riguarda documenti e Content Safety filtra contenuti, quindi non servono a ottimizzare modelli ML in questo modo.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml"
+    },
+    {
+      "id": "ai900-018",
+      "type": "single",
+      "difficulty": "easy",
+      "topic": "Computer Vision",
+      "question": "Vuoi assegnare a ogni foto di prodotto una sola etichetta come 'scarpa', 'borsa' o 'giacca'. Quale tipo di soluzione è più adatta?",
+      "options": [
+        "Image classification",
+        "Object detection",
+        "OCR",
+        "Sintesi vocale"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "L'image classification è corretta perché assegna un'etichetta complessiva all'intera immagine. L'object detection serve quando vuoi anche localizzare gli oggetti con riquadri, l'OCR estrae testo e la sintesi vocale genera audio, quindi non rispondono a questo requisito.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/"
+    },
+    {
+      "id": "ai900-019",
+      "type": "multiple",
+      "difficulty": "easy",
+      "topic": "Computer Vision",
+      "question": "Quali informazioni può restituire un processo OCR su un'immagine di un menu? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Testo rilevato",
+        "Posizione approssimativa del testo nella pagina",
+        "Traccia audio della lettura",
+        "Struttura come righe o parole",
+        "Identità certa della persona che ha scritto il testo"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "L'OCR può restituire il testo riconosciuto, la sua posizione e una struttura come righe o parole. Non produce una traccia audio, perché quello è un compito di sintesi vocale, e non stabilisce l'identità certa di chi ha scritto il testo, quindi quei distrattori sono errati.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-ocr"
+    },
+    {
+      "id": "ai900-020",
+      "type": "truefalse",
+      "difficulty": "medium",
+      "topic": "Computer Vision",
+      "question": "Il face detection può individuare la presenza e la posizione di un volto in un'immagine senza dover stabilire l'identità della persona.",
+      "correct": [
+        0
+      ],
+      "explanation": "Vero: il face detection serve a localizzare i volti e a rilevarne la presenza. Non richiede il riconoscimento dell'identità, che è un problema diverso e più sensibile non necessario per questo tipo di analisi.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/ai-services/face/concept-face-detection"
+    },
+    {
+      "id": "ai900-021",
+      "type": "ordering",
+      "difficulty": "hard",
+      "topic": "Computer Vision",
+      "question": "Ordina un flusso tipico per analizzare un modulo cartaceo con AI.",
+      "options": [
+        "Acquisire l'immagine o il PDF del modulo",
+        "Rilevare testo e layout del documento",
+        "Estrarre campi e tabelle rilevanti",
+        "Verificare e usare i dati estratti nell'applicazione"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Prima si acquisisce il documento, poi si analizzano testo e layout, quindi si estraggono campi e tabelle e infine si validano o usano i dati. Non avrebbe senso usare dati che non sono ancora stati rilevati o estratti.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview"
+    },
+    {
+      "id": "ai900-022",
+      "type": "single",
+      "difficulty": "medium",
+      "topic": "Computer Vision",
+      "question": "Vuoi sapere dove si trovano tutti i pallet in una foto di magazzino, tracciando un riquadro per ciascuno. Quale attività è più adatta?",
+      "options": [
+        "Object detection",
+        "Analisi del sentiment",
+        "Text summarization",
+        "Regressione"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "L'object detection è corretta perché identifica più oggetti in un'immagine e ne indica la posizione con riquadri. Sentiment e summarization sono compiti NLP, mentre la regressione prevede valori numerici e non localizza oggetti nelle foto.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/"
+    },
+    {
+      "id": "ai900-023",
+      "type": "multiple",
+      "difficulty": "medium",
+      "topic": "Computer Vision",
+      "question": "Quali scenari sono adatti a un carico di lavoro di computer vision? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Contare veicoli in un parcheggio da una foto aerea",
+        "Estrarre testo da un cartello stradale",
+        "Tradurre automaticamente un contratto in un'altra lingua",
+        "Rilevare se un caschetto di sicurezza è presente in un'immagine",
+        "Generare una descrizione testuale da un prompt senza immagine"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Contare veicoli, leggere testo in immagini e verificare la presenza di caschetti sono scenari di computer vision. Tradurre un contratto è un compito di linguaggio naturale, mentre generare testo da un prompt senza input visivo è AI generativa, quindi sono distrattori sbagliati.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+    },
+    {
+      "id": "ai900-024",
+      "type": "single",
+      "difficulty": "easy",
+      "topic": "Elaborazione del linguaggio naturale (NLP)",
+      "question": "Hai un archivio di ticket scritti in più lingue e vuoi instradarli al team giusto solo dopo aver capito in quale lingua sono scritti. Quale funzionalità serve per prima?",
+      "options": [
+        "Rilevamento della lingua",
+        "Object detection",
+        "OCR",
+        "Clustering di immagini"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Il rilevamento della lingua è corretto perché il primo passo è identificare l'idioma del ticket. Object detection, OCR e clustering di immagini lavorano su contenuti visivi e non determinano la lingua di un testo scritto.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/introduction-language/"
+    },
+    {
+      "id": "ai900-025",
+      "type": "multiple",
+      "difficulty": "medium",
+      "topic": "Elaborazione del linguaggio naturale (NLP)",
+      "question": "Quali attività rientrano tipicamente nell'elaborazione del linguaggio naturale? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Analisi del sentiment di recensioni",
+        "Estrazione di entità come nomi di aziende",
+        "Trascrizione del parlato in testo",
+        "Rilevamento di difetti in una foto di prodotto",
+        "Traduzione automatica di un'e-mail"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "explanation": "Sentiment, estrazione di entità, speech-to-text e traduzione automatica sono tutti compiti legati al linguaggio. Il rilevamento di difetti in una foto è invece computer vision, quindi è il distrattore errato.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/introduction-language/"
+    },
+    {
+      "id": "ai900-026",
+      "type": "truefalse",
+      "difficulty": "easy",
+      "topic": "Elaborazione del linguaggio naturale (NLP)",
+      "question": "La sintesi vocale converte testo scritto in audio parlato.",
+      "correct": [
+        0
+      ],
+      "explanation": "Vero: la sintesi vocale genera audio a partire da testo. Il processo opposto, che converte audio in testo, è invece il riconoscimento vocale o speech-to-text.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/overview"
+    },
+    {
+      "id": "ai900-027",
+      "type": "ordering",
+      "difficulty": "hard",
+      "topic": "Elaborazione del linguaggio naturale (NLP)",
+      "question": "Ordina le fasi di una soluzione di traduzione vocale in tempo reale.",
+      "options": [
+        "Acquisire l'audio dell'oratore",
+        "Trascrivere il parlato in testo",
+        "Tradurre il testo nella lingua di destinazione",
+        "Riprodurre la traduzione con sintesi vocale"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Il flusso corretto è: acquisire l'audio, trascriverlo, tradurre il testo ottenuto e infine sintetizzare la voce nella lingua di destinazione. Non si può tradurre o riprodurre la risposta prima di aver riconosciuto il parlato originale.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/create-speech-enabled-apps/"
+    },
+    {
+      "id": "ai900-028",
+      "type": "single",
+      "difficulty": "medium",
+      "topic": "Elaborazione del linguaggio naturale (NLP)",
+      "question": "Un contact center vuole classificare automaticamente le e-mail in categorie come 'fatturazione', 'supporto tecnico' e 'resi' usando esempi etichettati. Quale approccio è più adatto?",
+      "options": [
+        "Classificazione del testo personalizzata",
+        "Object detection",
+        "OCR",
+        "Regressione"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "La classificazione del testo personalizzata è corretta perché usa esempi etichettati per assegnare ogni e-mail alla categoria giusta. Object detection e OCR analizzano immagini, mentre la regressione prevede valori numerici e non categorie testuali.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview"
+    },
+    {
+      "id": "ai900-029",
+      "type": "multiple",
+      "difficulty": "hard",
+      "topic": "Elaborazione del linguaggio naturale (NLP)",
+      "question": "Quali informazioni possono essere considerate entità o dati sensibili da individuare in un testo? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Numero di carta di credito",
+        "Nome di una persona",
+        "Indirizzo e-mail",
+        "Istogramma dei pixel di un'immagine",
+        "Numero di telefono"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "explanation": "Numero di carta, nome, e-mail e numero di telefono sono esempi di entità o informazioni sensibili che un servizio NLP può rilevare in un testo. Un istogramma dei pixel riguarda dati visivi di un'immagine e non è un'entità testuale, quindi è il distrattore sbagliato.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview"
+    },
+    {
+      "id": "ai900-030",
+      "type": "single",
+      "difficulty": "easy",
+      "topic": "AI generativa",
+      "question": "Quale descrizione rappresenta meglio un modello di AI generativa?",
+      "options": [
+        "Un modello che crea nuovo contenuto come testo o immagini a partire da prompt",
+        "Un database relazionale ottimizzato per query SQL",
+        "Un algoritmo che ordina pacchetti di rete",
+        "Un servizio che esegue solo OCR su documenti"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Un modello di AI generativa crea nuovo contenuto in risposta a istruzioni o prompt, quindi la prima opzione è corretta. Un database SQL, un algoritmo di rete o un servizio OCR non generano contenuti originali del tipo richiesto.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/"
+    },
+    {
+      "id": "ai900-031",
+      "type": "multiple",
+      "difficulty": "medium",
+      "topic": "AI generativa",
+      "question": "Quali caratteristiche rendono un prompt più efficace per un modello generativo? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Specificare chiaramente il compito",
+        "Fornire contesto rilevante",
+        "Indicare il formato di output desiderato",
+        "Usare istruzioni contraddittorie per ottenere creatività",
+        "Omettere i vincoli importanti"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Un prompt efficace spiega il compito, aggiunge contesto utile e definisce il formato di output atteso. Istruzioni contraddittorie e vincoli mancanti aumentano ambiguità e qualità incoerente delle risposte, quindi sono distrattori errati.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/"
+    },
+    {
+      "id": "ai900-032",
+      "type": "truefalse",
+      "difficulty": "medium",
+      "topic": "AI generativa",
+      "question": "L'aggiunta di dati attendibili dell'organizzazione come grounding può ridurre il rischio di risposte inventate o non aggiornate.",
+      "correct": [
+        0
+      ],
+      "explanation": "Vero: fornire al modello contenuto attendibile e pertinente come grounding aiuta a vincolare la risposta a fonti approvate e riduce il rischio di hallucination. Non elimina ogni errore possibile, ma è una tecnica efficace per migliorare pertinenza e affidabilità.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry"
+    },
+    {
+      "id": "ai900-033",
+      "type": "single",
+      "difficulty": "hard",
+      "topic": "AI generativa",
+      "question": "Un team vuole confrontare più modelli, testare prompt e gestire esperimenti da un'unica piattaforma Azure. Quale ambiente è più adatto?",
+      "options": [
+        "Azure AI Foundry",
+        "Azure Virtual Network",
+        "Azure Monitor",
+        "Azure Load Balancer"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Azure AI Foundry è corretto perché consente di esplorare modelli, sperimentare prompt e gestire workflow di AI generativa. Virtual Network, Monitor e Load Balancer servono rispettivamente a rete, osservabilità e distribuzione del traffico, quindi non sono piattaforme per questo scopo.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry"
+    },
+    {
+      "id": "ai900-034",
+      "type": "multiple",
+      "difficulty": "medium",
+      "topic": "AI generativa",
+      "question": "Quali vantaggi offre l'uso di filtri dei contenuti in una soluzione di AI generativa? (Seleziona tutte le risposte corrette)",
+      "options": [
+        "Aiutano a bloccare prompt o output dannosi",
+        "Contribuiscono a ridurre contenuti offensivi o non sicuri",
+        "Garantiscono che ogni risposta sia sempre fattualmente corretta",
+        "Supportano un uso più responsabile del modello",
+        "Sostituiscono completamente il testing umano"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "I filtri dei contenuti aiutano a intercettare input o output dannosi, riducono contenuti offensivi e supportano un uso più responsabile del modello. Non garantiscono l'accuratezza fattuale di ogni risposta e non sostituiscono il testing umano, quindi quelle opzioni sono errate.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/foundry-classic/foundry-models/concepts/content-filter"
+    },
+    {
+      "id": "ai900-035",
+      "type": "single",
+      "difficulty": "hard",
+      "topic": "AI generativa",
+      "question": "Se un modello generativo produce con sicurezza una risposta plausibile ma inventata, come si chiama questo comportamento?",
+      "options": [
+        "Hallucination",
+        "Overfitting",
+        "Tokenization",
+        "Normalization"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Hallucination è il termine corretto per una risposta inventata ma presentata come credibile. Overfitting riguarda l'addestramento di modelli ML, tokenization è la suddivisione del testo in token e normalization è un preprocessing, quindi non descrivono questo problema.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/"
+    },
+    {
+      "id": "ai900-036",
+      "type": "single",
+      "difficulty": "hard",
+      "topic": "AI generativa",
+      "question": "Per un copilota aziendale che deve rispondere solo usando policy interne approvate, quale strategia riduce maggiormente il rischio di risposte fuori dominio?",
+      "options": [
+        "Aumentare solo la lunghezza massima della risposta",
+        "Usare grounding sui documenti approvati e limitare il prompt al contesto recuperato",
+        "Abbassare la risoluzione delle immagini in input",
+        "Sostituire il modello con un algoritmo di clustering"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Il grounding su documenti approvati con contesto recuperato è la strategia corretta perché vincola il copilota a fonti autorizzate. Aumentare la lunghezza della risposta non migliora il controllo del dominio, abbassare la risoluzione delle immagini è irrilevante e il clustering non sostituisce un copilota generativo basato su conoscenza aziendale.",
+      "learnMoreUrl": "https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry"
     }
   ]
 }

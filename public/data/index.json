@@ -22,10 +22,10 @@
       "description": "Carichi di lavoro di intelligenza artificiale, machine learning e servizi cognitivi su Azure.",
       "color": "#fbbf24",
       "topics": [
-        "Concetti di AI",
+        "Carichi di lavoro AI",
         "Machine Learning",
         "Computer Vision",
-        "NLP",
+        "Elaborazione del linguaggio naturale (NLP)",
         "AI generativa"
       ],
       "questionFile": "questions/ai-900.json"
