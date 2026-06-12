@@ -29,6 +29,22 @@
         "AI generativa"
       ],
       "questionFile": "questions/ai-900.json"
+    },
+    {
+      "id": "gh-300",
+      "code": "GH-300",
+      "title": "GitHub Copilot",
+      "description": "Uso responsabile di GitHub Copilot, funzionalità, prompt engineering, dati e architettura, privacy e produttività.",
+      "color": "#a78bfa",
+      "topics": [
+        "AI responsabile",
+        "Funzionalità di Copilot",
+        "Dati e architettura",
+        "Prompt engineering",
+        "Produttività e qualità",
+        "Privacy ed esclusioni"
+      ],
+      "questionFile": "questions/gh-300.json"
     }
   ]
 }
