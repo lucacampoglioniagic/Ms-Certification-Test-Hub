@@ -70,7 +70,7 @@ Aggiungi un oggetto all'array `certifications`:
 | `difficulty` | `easy` \| `medium` \| `hard` | sì | |
 | `topic` | string | sì | **deve corrispondere esattamente** a uno dei `topics` della certificazione in `index.json` |
 | `question` | string | sì | in italiano |
-| `options` | string[] | sì (tranne `truefalse`) | 2-6 opzioni |
+| `options` | string[] | sì (tranne `truefalse`) | 2–6 opzioni (2–7 per tipo `ordering`) |
 | `correct` | number[] | sì | vedi sotto |
 | `explanation` | string | sì | spiegazione mostrata dopo la risposta |
 | `learnMoreUrl` | string | no | link Microsoft Learn per approfondire |

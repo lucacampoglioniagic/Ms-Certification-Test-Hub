@@ -8,8 +8,8 @@ Simulatore d'esame per le certificazioni Microsoft. Interfaccia in italiano, fee
 
 | Codice | Certificazione | Domande |
 |---|---|---|
-| AZ-900 | Microsoft Azure Fundamentals | 12 |
-| AI-900 | Microsoft Azure AI Fundamentals | 6 |
+| AZ-900 | Microsoft Azure Fundamentals | 52 |
+| AI-900 | Microsoft Azure AI Fundamentals | 36 |
 | GH-300 | GitHub Copilot | 52 |
 
 ## ✨ Funzionalità
